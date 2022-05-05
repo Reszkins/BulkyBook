@@ -114,7 +114,7 @@ namespace BulkyBookWeb.Controllers
             _unitOfWork.Save();
             TempData["success"] = "Category deleted successfully";
             return RedirectToAction("Index");
-            return View(obj);
+            //return View(obj);
         }
     }
 }

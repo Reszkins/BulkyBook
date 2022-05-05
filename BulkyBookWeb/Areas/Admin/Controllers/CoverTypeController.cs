@@ -104,7 +104,7 @@ namespace BulkyBookWeb.Controllers
             _unitOfWork.Save();
             TempData["success"] = "CoverType deleted successfully";
             return RedirectToAction("Index");
-            return View(obj);
+            //return View(obj);
         }
     }
 }

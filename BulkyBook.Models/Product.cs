@@ -43,13 +43,13 @@ namespace BulkyBook.Models
         public int CategoryId { get; set; }
         [ForeignKey("CategoryId")]
         [ValidateNever]
-        public Category Category { get; set; }
+        public virtual Category Category { get; set; }
         [Required]
         [Display(Name = "Cover Type")]
         public int CoverTypeId { get; set; }
         [ForeignKey("CoverTypeId")]
         [ValidateNever]
-        public CoverType CoverType { get; set; }
+        public virtual CoverType CoverType { get; set; }
 
     }
 }
